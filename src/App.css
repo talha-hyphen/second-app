@@ -1,13 +1,17 @@
-
-.navLink{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  text-decoration:none;
+*{
+  margin: 0;padding:0 ;
+  box-sizing: border-box; 
+  font-family: sans-serif;
 }
-li{list-style-type: none; display: flex;;
-outline : none;   flex-direction:row;
 
 
+a{
+  text-decoration: none;
+  color: white;
+}
+img{cursor:pointer ;}
+.flex_dev{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

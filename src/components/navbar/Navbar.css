@@ -1,0 +1,11 @@
+.flex_dev{background-color: rgb(19, 27, 38);}
+.logo{width: 100px;}
+.right_nav{
+    display: flex;
+    justify-content: space-between;
+    width: 35%; color: white;
+}
+.flex_dev{
+    padding-left: 6%;
+    padding-right: 3%;
+}
