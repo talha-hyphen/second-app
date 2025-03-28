@@ -15,6 +15,8 @@ import ChooseCard from '../../components/card/ChooseCard'
 import search_icon from '../.././assets/images/search_icon.png'
 import tag_icon from '../.././assets/images/tag_icon.png'
 import timer_icon from '../.././assets/images/timer_icon.png'
+import coma_icon from '../.././assets/images/coma_icon.png'
+import arrow_icon from '../.././assets/images/arrow_icon.png'
 export default function Home() {
 
 const ChooseData=[{
@@ -117,6 +119,29 @@ const images = [{
 } ) }
 
 </div>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div className='CEO-Descrip' >
+          <div>
+            <img src={coma_icon}  alt=''></img>
+          </div>
+          <div> 
+            <p className='ceo-para' > 
+Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.
+Elena Pravo
+Ceo, Upstate</p>
+          </div>
+          <div className='ceo-name' >
+            <div><h4 >Elena Pravo </h4>
+            <p>Ceo Upstate</p></div>
+            <div>
+              <img src={arrow_icon} alt=''></img>
+            </div>
+          </div>
         </div>
       </section>
     </div>

@@ -1,5 +1,16 @@
 .home{color: white;}
 
+.ceo-name{
+    display: flex;
+    justify-content: space-between; padding-top:4%;
+}
+.CEO-Descrip{
+    padding-left: 20%; padding-right: 20%; padding-top: 7%;
+
+}
+.ceo-para{
+    font-size: 125%; font-weight: 100; line-height: 170%; padding-top: 3%;
+}
 .Choose_Heading{
     font-size: 200%;
     padding-bottom: 5%;
