@@ -1,5 +1,21 @@
 .home{color: white;}
 
+.Choose_Heading{
+    font-size: 200%;
+    padding-bottom: 5%;
+}
+.Choose_Home{
+    justify-items:center ;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.ChooseCard{
+    display: flex;
+    justify-content:center ;
+    padding-top: 4%;
+  
+}
+
 .residence_heading{margin-left: 7%;
 font-size: 200%; padding-top: 10%;}
 .ResidenceCard{

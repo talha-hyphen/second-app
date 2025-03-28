@@ -11,7 +11,27 @@ import ResidenceCard from '../.././components/card/ResidenceCard'
 import Residence1 from '../.././assets/images/residence1.png'
 import Residence2 from '../.././assets/images/residence2.png'
 import Residence3 from '../.././assets/images/residence3.png'
+import ChooseCard from '../../components/card/ChooseCard'
+import search_icon from '../.././assets/images/search_icon.png'
+import tag_icon from '../.././assets/images/tag_icon.png'
+import timer_icon from '../.././assets/images/timer_icon.png'
 export default function Home() {
+
+const ChooseData=[{
+  Char:"Easy To Find",
+  description:"Erna  Messa aliqa diu puslina hakaiu njau nakjhu bvfrae Messa aliqa diu puslina hakaiu njau nakjhu bvfrae iao vacfa oaiooiuj qerrqy.",
+  image:search_icon
+},{
+  Char:"Affordable Prices",
+  description:"Erna Mess  Messa aliqa diu puslina hakaiu njau nakjhu reuifjrjc iei jeijr nc cuquencd  bvfrae hakaiu njau nakjhu bvfrae iao vacfa oaiooiuj qerrqy.",
+  image:tag_icon 
+},{
+  Char:"Quickly Process",
+  description:"Erna Messa hakaiu njau  rueof re urecjq uqe8f  iur qor bvfrae iao vacfa Messa aliqa diu puslina hakaiu njau nakjhu bvfrae oaiooiuj qerrqy.",
+  image:timer_icon 
+}
+]
+
 
 const ResidenceData=[
   {
@@ -86,7 +106,21 @@ const images = [{
         })}
        </div>
       </section>
+
+
+      <section>
+        <div className='Choose_Home' >
+        <div><h2 className='Choose_Heading'>Why To Choose Us</h2></div>
+        <div className='ChooseCard'>
+{ChooseData.map((item,index)=>{
+  return  <ChooseCard key={index} Char={item.Char} image={item.image} data={item.description} />
+} ) }
+
+</div>
+        </div>
+      </section>
     </div>
     </div>
+    
   )
 }
