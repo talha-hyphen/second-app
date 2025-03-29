@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import logo from '../.././assets/images/logo.png'
 import header_image from '../../assets/images/header_image.png'
 import HomeImages from '../../components/homeImages/HomeImages'
 import Image1 from '../.././assets/images/agency.png'
@@ -17,7 +18,44 @@ import tag_icon from '../.././assets/images/tag_icon.png'
 import timer_icon from '../.././assets/images/timer_icon.png'
 import coma_icon from '../.././assets/images/coma_icon.png'
 import arrow_icon from '../.././assets/images/arrow_icon.png'
+import find_home from '../.././assets/images/find_home.png'
+import find_tab from '../.././assets/images/find_tab.png'
+import Footer_Home from '../../components/footer-home/Footer-Home'
+import fb_logo from '../../assets/images/fb_logo.png'
+import yt_logo from '../../assets/images/yt_logo.png'
+import insta_logo from '../../assets/images/insta_logo.png'
+import tw_logo from '../../assets/images/tw_logo.png'
+import Footer_Data from '../../components/footer-data/Footer-Data'
 export default function Home() {
+
+const footer_logo =[fb_logo,insta_logo,tw_logo,yt_logo]
+
+const footer_Data =[{
+  heading:"Project",
+  point1:"Houses",
+  point2:"Rooms",
+  point3:"Flats",
+  point4:"Appartments"
+},{
+  heading:"Company",
+  point1:"How we work?",
+  point2:"Capital",
+  point3:"Security",
+  point4:""
+},{
+  heading:"Movement",
+  point1:"How are we",
+  point2:"Support us",
+  point3:"",
+  point4:""
+},{
+  heading:"Help",
+  point1:"Privacy",
+  point2:"Condiion",
+  point3:"Blog",
+  point4:"FAQs"
+}]
+
 
 const ChooseData=[{
   Char:"Easy To Find",
@@ -97,6 +135,7 @@ const images = [{
           } />
         })}
         </div></div>
+        <hr/>
       </section>
 
 
@@ -125,6 +164,7 @@ const images = [{
 
 
       <section>
+        <hr/>
         <div className='CEO-Descrip' >
           <div>
             <img src={coma_icon}  alt=''></img>
@@ -143,6 +183,56 @@ Ceo, Upstate</p>
             </div>
           </div>
         </div>
+      </section>
+
+
+      <section>
+        <hr/>
+        <div className='find_home'>
+          <div className='home_img' >
+            <img  src={find_home} alt=''></img>
+          </div>
+          <div>
+            <img src ={find_tab} alt=''></img>
+          </div>
+          <div className='find_home_descrip' >
+            <center><h3 className='find_heading' >We help people to find homes</h3></center>
+            <p className='find_para' >Mauris orci donec blandit maecenas. Orci lorem purus porttitor massa consectetur. Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue justo. Nibh laoreet volutpat quis velit. Blandit aliquam donec sed morbi congue eget lorem viverra porta id lobortis.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <hr/>
+         <div className='idl_list'>
+          <div className='img_descrip_logo'>
+            <img src={logo}  alt='' ></img>
+            
+           <p className='footer_para'>Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue.</p>
+            
+            <div className='footer_logo'>
+            {footer_logo.map((logo,index) => {
+              return <Footer_Home key={index} logo={logo} />
+            })}
+            </div>
+            </div>
+
+            
+            <div className='footer_datalist'>
+              {footer_Data.map((Data,index)=>{
+                return <Footer_Data key={index} 
+                heading={Data.heading}  point1={Data.point1}
+                point2={Data.point2} point3={Data.point3}
+                point4={Data.point4} />
+              })}
+              </div>
+              </div>
+              
+              <hr/>
+
+              <center><h6 className='ending'>HAPPY CODING!</h6></center>
+        
       </section>
     </div>
     </div>

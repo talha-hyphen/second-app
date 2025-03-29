@@ -1,11 +1,63 @@
 .home{color: white;}
 
+.footer_logo{
+    display: flex; justify-content: space-around;
+    width: 50%;
+}
+.footer_datalist{
+    display: flex; justify-content: space-between; width: 80%;
+}
+.idl_list{
+    display:flex; justify-content:space-between ; padding-bottom: 5%;
+    padding-top: 5%;
+}
+.list{
+    list-style-type: none; line-height: 200%; padding-left:100% ;
+}
+.footer_para{
+    padding-top: 4%;padding-bottom: 7%; padding-left: 3%;
+}
+hr{
+    color: white; 
+}
+.ending{
+    padding: 2%;
+}
+
+
+
+
+
+
+.find_home{
+    display: flex; justify-content: space-between; padding-top: 20%;
+    padding-bottom: 25%;
+}
+
+.find_heading{
+    font-size: 240%;
+    font-weight: 500;
+    padding-bottom: 4%;
+}
+.home_img{
+    padding-right: 4%;
+}
+.find_para{
+    font-size: 90%; padding-left: 4%; padding-right: 4%;
+}
+.find_home_descrip{
+    
+  justify-content: center; align-items:center ; padding-top: 12%;
+  padding-left: 3%; padding-right: 3%;
+   
+}
 .ceo-name{
     display: flex;
     justify-content: space-between; padding-top:4%;
 }
 .CEO-Descrip{
     padding-left: 20%; padding-right: 20%; padding-top: 7%;
+    padding-bottom: 12%;
 
 }
 .ceo-para{
